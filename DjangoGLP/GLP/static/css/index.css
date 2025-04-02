@@ -1,0 +1,274 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Microsoft YaHei', '微软雅黑', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f7fc;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 250px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    text-decoration: none;
+    color: #6c38d8;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.title:hover {
+    color: #8052e2;
+}
+
+/* 布局容器 */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 上部分区域 */
+.top-section {
+    background-color: rgb(248, 247, 252);
+    flex: 25%;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-section h1 {
+    font-size: 2.5rem;
+    color: #4a4a4a;
+    margin-bottom: 35px;
+    max-width: 800px;
+}
+
+.top-section p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* 表单元素样式 */
+.index_ModelSelect {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-color: white;
+    color: #444;
+    font-size: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: 180px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.index_ModelSelect:hover {
+    border-color: #b197fc;
+}
+
+.index_ModelSelect:focus {
+    border-color: #8c6be6;
+    box-shadow: 0 0 0 2px rgba(177, 151, 252, 0.25);
+}
+
+.index_Question {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0 10px;
+    width: 350px;
+    font-size: 15px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    outline: none;
+    transition: all 0.3s;
+}
+
+.index_Question:hover {
+    border-color: #b197fc;
+}
+
+.index_Question:focus {
+    border-color: #8c6be6;
+    box-shadow: 0 0 0 2px rgba(177, 151, 252, 0.25);
+}
+
+.btn {
+    background-color: #8c6be6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 3px 6px rgba(140, 107, 230, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7452d8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(140, 107, 230, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn:disabled {
+    background-color: #b5a7e0;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* 下部分区域 */
+.bottom-section {
+    background-color: rgb(248, 247, 252);
+    display: flex;
+    flex-direction: column;
+    flex: 75%;
+    padding: 0 20px 40px;
+}
+
+/* 下方上半部分 */
+.bottom-top {
+    flex: 50%;
+    display: flex;
+}
+
+/* 下方下半部分 */
+.bottom-bottom {
+    flex: 50%;
+    display: flex;
+}
+
+/* 卡片样式 */
+.carddiy {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 230px;
+    width: 60%;
+    margin-top: 3%;
+    position: relative;
+    cursor: pointer;
+}
+
+.carddiy:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carddiy .top {
+    padding: 15px;
+    background: linear-gradient(135deg, #f2ebff 0%, #e9e1ff 100%);
+    display: flex;
+    align-items: center;
+}
+
+.carddiy h6 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+    color: #4a4a4a;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.carddiy p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* SVG 图标样式 */
+.svg2 {
+    fill: #8c6be6;
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s;
+}
+
+.carddiy:hover .svg2 {
+    transform: scale(1.1);
+}
+
+/* 响应式布局 */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 15px 100px;
+    }
+
+    .carddiy {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 50px;
+    }
+
+    .index_Question {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bottom-top, .bottom-bottom {
+        flex-direction: column;
+    }
+
+    .carddiy {
+        width: 85%;
+        margin: 15px auto;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .index_ModelSelect, .index_Question, .btn {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    form div {
+        flex-direction: column;
+    }
+
+    .top-section h1 {
+        font-size: 1.8rem;
+    }
+}
